@@ -14,6 +14,11 @@
 		D4080BFF1B68CD6A007402F0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D4080BFE1B68CD6A007402F0 /* Images.xcassets */; };
 		D4080C021B68CD6A007402F0 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D4080C001B68CD6A007402F0 /* LaunchScreen.xib */; };
 		D4080C0E1B68CD6B007402F0 /* AMapDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D4080C0D1B68CD6B007402F0 /* AMapDemoTests.m */; };
+		D4080C271B68D269007402F0 /* MAMapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4080C251B68D269007402F0 /* MAMapKit.framework */; };
+		D4080C2F1B68D782007402F0 /* AMap.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D4080C2E1B68D782007402F0 /* AMap.bundle */; };
+		D47118EA1B69B35500479663 /* AMapSearchKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D47118E91B69B35500479663 /* AMapSearchKit.framework */; };
+		D47118EC1B69B37800479663 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D47118EB1B69B37800479663 /* libz.dylib */; };
+		D47118EE1B69B38600479663 /* libstdc++.6.0.9.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D47118ED1B69B38600479663 /* libstdc++.6.0.9.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +45,11 @@
 		D4080C071B68CD6B007402F0 /* AMapDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AMapDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4080C0C1B68CD6B007402F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D4080C0D1B68CD6B007402F0 /* AMapDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AMapDemoTests.m; sourceTree = "<group>"; };
+		D4080C251B68D269007402F0 /* MAMapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MAMapKit.framework; path = ../MAMapKit.framework; sourceTree = "<group>"; };
+		D4080C2E1B68D782007402F0 /* AMap.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = AMap.bundle; sourceTree = "<group>"; };
+		D47118E91B69B35500479663 /* AMapSearchKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AMapSearchKit.framework; path = ../AMapSearchKit.framework; sourceTree = "<group>"; };
+		D47118EB1B69B37800479663 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		D47118ED1B69B38600479663 /* libstdc++.6.0.9.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.6.0.9.dylib"; path = "usr/lib/libstdc++.6.0.9.dylib"; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +57,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D47118EE1B69B38600479663 /* libstdc++.6.0.9.dylib in Frameworks */,
+				D47118EC1B69B37800479663 /* libz.dylib in Frameworks */,
+				D47118EA1B69B35500479663 /* AMapSearchKit.framework in Frameworks */,
+				D4080C271B68D269007402F0 /* MAMapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -64,6 +78,7 @@
 			isa = PBXGroup;
 			children = (
 				D4080BF01B68CD6A007402F0 /* AMapDemo */,
+				D4080C1B1B68CF3D007402F0 /* FrameWorks */,
 				D4080C0A1B68CD6B007402F0 /* AMapDemoTests */,
 				D4080BEF1B68CD6A007402F0 /* Products */,
 			);
@@ -117,6 +132,19 @@
 				D4080C0C1B68CD6B007402F0 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D4080C1B1B68CF3D007402F0 /* FrameWorks */ = {
+			isa = PBXGroup;
+			children = (
+				D4080C2E1B68D782007402F0 /* AMap.bundle */,
+				D47118ED1B69B38600479663 /* libstdc++.6.0.9.dylib */,
+				D47118EB1B69B37800479663 /* libz.dylib */,
+				D47118E91B69B35500479663 /* AMapSearchKit.framework */,
+				D4080C251B68D269007402F0 /* MAMapKit.framework */,
+			);
+			name = FrameWorks;
+			path = AMapDemo;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -201,6 +229,7 @@
 			files = (
 				D4080BFD1B68CD6A007402F0 /* Main.storyboard in Resources */,
 				D4080C021B68CD6A007402F0 /* LaunchScreen.xib in Resources */,
+				D4080C2F1B68D782007402F0 /* AMap.bundle in Resources */,
 				D4080BFF1B68CD6A007402F0 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -347,8 +376,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)";
 				INFOPLIST_FILE = AMapDemo/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -357,8 +389,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)";
 				INFOPLIST_FILE = AMapDemo/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -416,6 +450,7 @@
 				D4080C131B68CD6B007402F0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D4080C141B68CD6B007402F0 /* Build configuration list for PBXNativeTarget "AMapDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -424,6 +459,7 @@
 				D4080C161B68CD6B007402F0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		886F346E1D78310F00D6200D /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 886F346D1D78310F00D6200D /* libz.tbd */; };
+		886F34721D78313200D6200D /* libstdc++.6.0.9.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 886F34711D78313200D6200D /* libstdc++.6.0.9.tbd */; };
 		D4080BF41B68CD6A007402F0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D4080BF31B68CD6A007402F0 /* main.m */; };
 		D4080BF71B68CD6A007402F0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D4080BF61B68CD6A007402F0 /* AppDelegate.m */; };
 		D4080BFA1B68CD6A007402F0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4080BF91B68CD6A007402F0 /* ViewController.m */; };
@@ -14,11 +16,6 @@
 		D4080BFF1B68CD6A007402F0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D4080BFE1B68CD6A007402F0 /* Images.xcassets */; };
 		D4080C021B68CD6A007402F0 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D4080C001B68CD6A007402F0 /* LaunchScreen.xib */; };
 		D4080C0E1B68CD6B007402F0 /* AMapDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D4080C0D1B68CD6B007402F0 /* AMapDemoTests.m */; };
-		D4080C271B68D269007402F0 /* MAMapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4080C251B68D269007402F0 /* MAMapKit.framework */; };
-		D4080C2F1B68D782007402F0 /* AMap.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D4080C2E1B68D782007402F0 /* AMap.bundle */; };
-		D47118EA1B69B35500479663 /* AMapSearchKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D47118E91B69B35500479663 /* AMapSearchKit.framework */; };
-		D47118EC1B69B37800479663 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D47118EB1B69B37800479663 /* libz.dylib */; };
-		D47118EE1B69B38600479663 /* libstdc++.6.0.9.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D47118ED1B69B38600479663 /* libstdc++.6.0.9.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,6 +29,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		886F346D1D78310F00D6200D /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		886F346F1D78312000D6200D /* libstdc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.tbd"; path = "usr/lib/libstdc++.tbd"; sourceTree = SDKROOT; };
+		886F34711D78313200D6200D /* libstdc++.6.0.9.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.6.0.9.tbd"; path = "usr/lib/libstdc++.6.0.9.tbd"; sourceTree = SDKROOT; };
 		D4080BEE1B68CD6A007402F0 /* AMapDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AMapDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4080BF21B68CD6A007402F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D4080BF31B68CD6A007402F0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -45,11 +45,6 @@
 		D4080C071B68CD6B007402F0 /* AMapDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AMapDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4080C0C1B68CD6B007402F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D4080C0D1B68CD6B007402F0 /* AMapDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AMapDemoTests.m; sourceTree = "<group>"; };
-		D4080C251B68D269007402F0 /* MAMapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MAMapKit.framework; path = ../MAMapKit.framework; sourceTree = "<group>"; };
-		D4080C2E1B68D782007402F0 /* AMap.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = AMap.bundle; sourceTree = "<group>"; };
-		D47118E91B69B35500479663 /* AMapSearchKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AMapSearchKit.framework; path = ../AMapSearchKit.framework; sourceTree = "<group>"; };
-		D47118EB1B69B37800479663 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
-		D47118ED1B69B38600479663 /* libstdc++.6.0.9.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.6.0.9.dylib"; path = "usr/lib/libstdc++.6.0.9.dylib"; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,10 +52,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D47118EE1B69B38600479663 /* libstdc++.6.0.9.dylib in Frameworks */,
-				D47118EC1B69B37800479663 /* libz.dylib in Frameworks */,
-				D47118EA1B69B35500479663 /* AMapSearchKit.framework in Frameworks */,
-				D4080C271B68D269007402F0 /* MAMapKit.framework in Frameworks */,
+				886F34721D78313200D6200D /* libstdc++.6.0.9.tbd in Frameworks */,
+				886F346E1D78310F00D6200D /* libz.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +70,9 @@
 		D4080BE51B68CD6A007402F0 = {
 			isa = PBXGroup;
 			children = (
+				886F34711D78313200D6200D /* libstdc++.6.0.9.tbd */,
+				886F346F1D78312000D6200D /* libstdc++.tbd */,
+				886F346D1D78310F00D6200D /* libz.tbd */,
 				D4080BF01B68CD6A007402F0 /* AMapDemo */,
 				D4080C1B1B68CF3D007402F0 /* FrameWorks */,
 				D4080C0A1B68CD6B007402F0 /* AMapDemoTests */,
@@ -137,11 +133,6 @@
 		D4080C1B1B68CF3D007402F0 /* FrameWorks */ = {
 			isa = PBXGroup;
 			children = (
-				D4080C2E1B68D782007402F0 /* AMap.bundle */,
-				D47118ED1B69B38600479663 /* libstdc++.6.0.9.dylib */,
-				D47118EB1B69B37800479663 /* libz.dylib */,
-				D47118E91B69B35500479663 /* AMapSearchKit.framework */,
-				D4080C251B68D269007402F0 /* MAMapKit.framework */,
 			);
 			name = FrameWorks;
 			path = AMapDemo;
@@ -229,7 +220,6 @@
 			files = (
 				D4080BFD1B68CD6A007402F0 /* Main.storyboard in Resources */,
 				D4080C021B68CD6A007402F0 /* LaunchScreen.xib in Resources */,
-				D4080C2F1B68D782007402F0 /* AMap.bundle in Resources */,
 				D4080BFF1B68CD6A007402F0 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

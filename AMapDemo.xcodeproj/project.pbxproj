@@ -34,6 +34,8 @@
 		886F346D1D78310F00D6200D /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		886F346F1D78312000D6200D /* libstdc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.tbd"; path = "usr/lib/libstdc++.tbd"; sourceTree = SDKROOT; };
 		886F34711D78313200D6200D /* libstdc++.6.0.9.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.6.0.9.tbd"; path = "usr/lib/libstdc++.6.0.9.tbd"; sourceTree = SDKROOT; };
+		886F34731D78399300D6200D /* AMapDemo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AMapDemo-Prefix.pch"; sourceTree = "<group>"; };
+		886F34741D783C3800D6200D /* ExternHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExternHeader.h; sourceTree = "<group>"; };
 		963E24A3CD17D083E74C961C /* Pods-AMapDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AMapDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AMapDemo/Pods-AMapDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		D4080BEE1B68CD6A007402F0 /* AMapDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AMapDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4080BF21B68CD6A007402F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -92,9 +94,6 @@
 		D4080BE51B68CD6A007402F0 = {
 			isa = PBXGroup;
 			children = (
-				886F34711D78313200D6200D /* libstdc++.6.0.9.tbd */,
-				886F346F1D78312000D6200D /* libstdc++.tbd */,
-				886F346D1D78310F00D6200D /* libz.tbd */,
 				D4080BF01B68CD6A007402F0 /* AMapDemo */,
 				D4080C1B1B68CF3D007402F0 /* FrameWorks */,
 				D4080C0A1B68CD6B007402F0 /* AMapDemoTests */,
@@ -123,6 +122,8 @@
 				D4080BFB1B68CD6A007402F0 /* Main.storyboard */,
 				D4080BFE1B68CD6A007402F0 /* Images.xcassets */,
 				D4080C001B68CD6A007402F0 /* LaunchScreen.xib */,
+				886F34731D78399300D6200D /* AMapDemo-Prefix.pch */,
+				886F34741D783C3800D6200D /* ExternHeader.h */,
 				D4080BF11B68CD6A007402F0 /* Supporting Files */,
 			);
 			path = AMapDemo;
@@ -133,6 +134,9 @@
 			children = (
 				D4080BF21B68CD6A007402F0 /* Info.plist */,
 				D4080BF31B68CD6A007402F0 /* main.m */,
+				886F34711D78313200D6200D /* libstdc++.6.0.9.tbd */,
+				886F346F1D78312000D6200D /* libstdc++.tbd */,
+				886F346D1D78310F00D6200D /* libz.tbd */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -446,8 +450,10 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/AMapDemo/AMapDemo-Prefix.pch";
 				INFOPLIST_FILE = AMapDemo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.julinginfo.AMapDemo;
@@ -464,8 +470,10 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/AMapDemo/AMapDemo-Prefix.pch";
 				INFOPLIST_FILE = AMapDemo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.julinginfo.AMapDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";

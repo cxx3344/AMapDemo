@@ -16,6 +16,7 @@
 		D4080BFF1B68CD6A007402F0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D4080BFE1B68CD6A007402F0 /* Images.xcassets */; };
 		D4080C021B68CD6A007402F0 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D4080C001B68CD6A007402F0 /* LaunchScreen.xib */; };
 		D4080C0E1B68CD6B007402F0 /* AMapDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D4080C0D1B68CD6B007402F0 /* AMapDemoTests.m */; };
+		D47EA021FE33C1EC0F6B997A /* libPods-AMapDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EF27CB56B51826429CE32E5 /* libPods-AMapDemo.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,9 +30,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2EF27CB56B51826429CE32E5 /* libPods-AMapDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AMapDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		886F346D1D78310F00D6200D /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		886F346F1D78312000D6200D /* libstdc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.tbd"; path = "usr/lib/libstdc++.tbd"; sourceTree = SDKROOT; };
 		886F34711D78313200D6200D /* libstdc++.6.0.9.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.6.0.9.tbd"; path = "usr/lib/libstdc++.6.0.9.tbd"; sourceTree = SDKROOT; };
+		963E24A3CD17D083E74C961C /* Pods-AMapDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AMapDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AMapDemo/Pods-AMapDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		D4080BEE1B68CD6A007402F0 /* AMapDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AMapDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4080BF21B68CD6A007402F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D4080BF31B68CD6A007402F0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -45,6 +48,7 @@
 		D4080C071B68CD6B007402F0 /* AMapDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AMapDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4080C0C1B68CD6B007402F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D4080C0D1B68CD6B007402F0 /* AMapDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AMapDemoTests.m; sourceTree = "<group>"; };
+		DD4267FC4254018CE3F48561 /* Pods-AMapDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AMapDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-AMapDemo/Pods-AMapDemo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,7 @@
 			files = (
 				886F34721D78313200D6200D /* libstdc++.6.0.9.tbd in Frameworks */,
 				886F346E1D78310F00D6200D /* libz.tbd in Frameworks */,
+				D47EA021FE33C1EC0F6B997A /* libPods-AMapDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -67,6 +72,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BED9CAD522042AD91797520E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2EF27CB56B51826429CE32E5 /* libPods-AMapDemo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C7017449A93694C236D4750E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				963E24A3CD17D083E74C961C /* Pods-AMapDemo.debug.xcconfig */,
+				DD4267FC4254018CE3F48561 /* Pods-AMapDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		D4080BE51B68CD6A007402F0 = {
 			isa = PBXGroup;
 			children = (
@@ -77,6 +99,8 @@
 				D4080C1B1B68CF3D007402F0 /* FrameWorks */,
 				D4080C0A1B68CD6B007402F0 /* AMapDemoTests */,
 				D4080BEF1B68CD6A007402F0 /* Products */,
+				C7017449A93694C236D4750E /* Pods */,
+				BED9CAD522042AD91797520E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -145,9 +169,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D4080C111B68CD6B007402F0 /* Build configuration list for PBXNativeTarget "AMapDemo" */;
 			buildPhases = (
+				ADC363C9EFD7A98EDAFFD37B /* [CP] Check Pods Manifest.lock */,
 				D4080BEA1B68CD6A007402F0 /* Sources */,
 				D4080BEB1B68CD6A007402F0 /* Frameworks */,
 				D4080BEC1B68CD6A007402F0 /* Resources */,
+				BC76AF2BBA474D971E7C4EFC /* [CP] Embed Pods Frameworks */,
+				FAC39F899C1E90B8E5F97C86 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -187,6 +214,7 @@
 				TargetAttributes = {
 					D4080BED1B68CD6A007402F0 = {
 						CreatedOnToolsVersion = 6.4;
+						DevelopmentTeam = 333X5SVGG3;
 					};
 					D4080C061B68CD6B007402F0 = {
 						CreatedOnToolsVersion = 6.4;
@@ -232,6 +260,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		ADC363C9EFD7A98EDAFFD37B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		BC76AF2BBA474D971E7C4EFC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AMapDemo/Pods-AMapDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FAC39F899C1E90B8E5F97C86 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AMapDemo/Pods-AMapDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D4080BEA1B68CD6A007402F0 /* Sources */ = {
@@ -364,26 +440,36 @@
 		};
 		D4080C121B68CD6B007402F0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 963E24A3CD17D083E74C961C /* Pods-AMapDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = AMapDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.julinginfo.AMapDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
 		D4080C131B68CD6B007402F0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DD4267FC4254018CE3F48561 /* Pods-AMapDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = AMapDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.julinginfo.AMapDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};

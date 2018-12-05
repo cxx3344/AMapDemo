@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7FE3E2ED21B77C5600222037 /* libstdc++.6.0.9.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FE3E2EC21B77C5600222037 /* libstdc++.6.0.9.tbd */; };
+		7FE3E2EF21B77C6100222037 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FE3E2EE21B77C6100222037 /* libz.tbd */; };
 		D4080BF41B68CD6A007402F0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D4080BF31B68CD6A007402F0 /* main.m */; };
 		D4080BF71B68CD6A007402F0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D4080BF61B68CD6A007402F0 /* AppDelegate.m */; };
 		D4080BFA1B68CD6A007402F0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4080BF91B68CD6A007402F0 /* ViewController.m */; };
@@ -17,8 +19,6 @@
 		D4080C271B68D269007402F0 /* MAMapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4080C251B68D269007402F0 /* MAMapKit.framework */; };
 		D4080C2F1B68D782007402F0 /* AMap.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D4080C2E1B68D782007402F0 /* AMap.bundle */; };
 		D47118EA1B69B35500479663 /* AMapSearchKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D47118E91B69B35500479663 /* AMapSearchKit.framework */; };
-		D47118EC1B69B37800479663 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D47118EB1B69B37800479663 /* libz.dylib */; };
-		D47118EE1B69B38600479663 /* libstdc++.6.0.9.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D47118ED1B69B38600479663 /* libstdc++.6.0.9.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,6 +32,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7FE3E2EC21B77C5600222037 /* libstdc++.6.0.9.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.6.0.9.tbd"; path = "usr/lib/libstdc++.6.0.9.tbd"; sourceTree = SDKROOT; };
+		7FE3E2EE21B77C6100222037 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		D4080BEE1B68CD6A007402F0 /* AMapDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AMapDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4080BF21B68CD6A007402F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D4080BF31B68CD6A007402F0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -57,8 +59,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D47118EE1B69B38600479663 /* libstdc++.6.0.9.dylib in Frameworks */,
-				D47118EC1B69B37800479663 /* libz.dylib in Frameworks */,
+				7FE3E2EF21B77C6100222037 /* libz.tbd in Frameworks */,
+				7FE3E2ED21B77C5600222037 /* libstdc++.6.0.9.tbd in Frameworks */,
 				D47118EA1B69B35500479663 /* AMapSearchKit.framework in Frameworks */,
 				D4080C271B68D269007402F0 /* MAMapKit.framework in Frameworks */,
 			);
@@ -74,6 +76,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7FE3E2EB21B77C5600222037 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7FE3E2EE21B77C6100222037 /* libz.tbd */,
+				7FE3E2EC21B77C5600222037 /* libstdc++.6.0.9.tbd */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		D4080BE51B68CD6A007402F0 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +92,7 @@
 				D4080C1B1B68CF3D007402F0 /* FrameWorks */,
 				D4080C0A1B68CD6B007402F0 /* AMapDemoTests */,
 				D4080BEF1B68CD6A007402F0 /* Products */,
+				7FE3E2EB21B77C5600222037 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};

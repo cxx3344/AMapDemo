@@ -1,0 +1,10 @@
+ARCHS = $(ARCHS_STANDARD)
+FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/AMap2DMap" "${PODS_ROOT}/AMapFoundation" "${PODS_ROOT}/AMapSearch"
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
+HEADER_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/AFNetworking" "${PODS_ROOT}/Headers/Public/AMap2DMap" "${PODS_ROOT}/Headers/Public/AMapFoundation" "${PODS_ROOT}/Headers/Public/AMapSearch" "${PODS_ROOT}/Headers/Public/BlocksKit" "${PODS_ROOT}/Headers/Public/Colours" "${PODS_ROOT}/Headers/Public/Masonry" "${PODS_ROOT}/Headers/Public/SVProgressHUD" "${PODS_ROOT}/Headers/Public/UITableView+FDTemplateLayoutCell"
+LIBRARY_SEARCH_PATHS = $(inherited) "$PODS_CONFIGURATION_BUILD_DIR/AFNetworking" "$PODS_CONFIGURATION_BUILD_DIR/BlocksKit" "$PODS_CONFIGURATION_BUILD_DIR/Colours" "$PODS_CONFIGURATION_BUILD_DIR/Masonry" "$PODS_CONFIGURATION_BUILD_DIR/SVProgressHUD" "$PODS_CONFIGURATION_BUILD_DIR/UITableView+FDTemplateLayoutCell"
+OTHER_CFLAGS = $(inherited) -isystem "${PODS_ROOT}/Headers/Public" -isystem "${PODS_ROOT}/Headers/Public/AFNetworking" -isystem "${PODS_ROOT}/Headers/Public/AMap2DMap" -isystem "${PODS_ROOT}/Headers/Public/AMapFoundation" -isystem "${PODS_ROOT}/Headers/Public/AMapSearch" -isystem "${PODS_ROOT}/Headers/Public/BlocksKit" -isystem "${PODS_ROOT}/Headers/Public/Colours" -isystem "${PODS_ROOT}/Headers/Public/Masonry" -isystem "${PODS_ROOT}/Headers/Public/SVProgressHUD" -isystem "${PODS_ROOT}/Headers/Public/UITableView+FDTemplateLayoutCell"
+OTHER_LDFLAGS = $(inherited) -ObjC -l"AFNetworking" -l"BlocksKit" -l"Colours" -l"Masonry" -l"SVProgressHUD" -l"UITableView+FDTemplateLayoutCell" -l"c++" -l"stdc++.6.0.9" -l"z" -framework "AMapFoundationKit" -framework "AMapSearchKit" -framework "CoreGraphics" -framework "CoreLocation" -framework "CoreTelephony" -framework "Foundation" -framework "MAMapKit" -framework "MessageUI" -framework "MobileCoreServices" -framework "QuartzCore" -framework "Security" -framework "SystemConfiguration" -framework "UIKit"
+PODS_BUILD_DIR = $BUILD_DIR
+PODS_CONFIGURATION_BUILD_DIR = $PODS_BUILD_DIR/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)
+PODS_ROOT = ${SRCROOT}/Pods

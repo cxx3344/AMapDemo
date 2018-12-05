@@ -1,0 +1,19 @@
+//
+//  AMapDemo-Prefix.pch
+//  AMapDemo
+//
+//  Created by 巨灵MAC－Air on 16/9/1.
+//  Copyright © 2016年 上海理想信息有限公司. All rights reserved.
+//  $(SRCROOT)/AMapDemo/AMapDemo-Prefix.pch
+
+#ifndef AMapDemo_Prefix_pch
+#define AMapDemo_Prefix_pch
+
+/// 高德地图key值
+#define AMapKey @"a3f2e614b5430ff353dc84f675061b05"
+
+/// 第三方库头文件引入
+#import "ExternHeader.h"
+
+
+#endif /* AMapDemo_Prefix_pch */

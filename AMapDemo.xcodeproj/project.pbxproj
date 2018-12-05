@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		7FE3E2ED21B77C5600222037 /* libstdc++.6.0.9.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FE3E2EC21B77C5600222037 /* libstdc++.6.0.9.tbd */; };
 		7FE3E2EF21B77C6100222037 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FE3E2EE21B77C6100222037 /* libz.tbd */; };
+
 		D4080BF41B68CD6A007402F0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D4080BF31B68CD6A007402F0 /* main.m */; };
 		D4080BF71B68CD6A007402F0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D4080BF61B68CD6A007402F0 /* AppDelegate.m */; };
 		D4080BFA1B68CD6A007402F0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4080BF91B68CD6A007402F0 /* ViewController.m */; };
@@ -19,6 +20,7 @@
 		D4080C271B68D269007402F0 /* MAMapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4080C251B68D269007402F0 /* MAMapKit.framework */; };
 		D4080C2F1B68D782007402F0 /* AMap.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D4080C2E1B68D782007402F0 /* AMap.bundle */; };
 		D47118EA1B69B35500479663 /* AMapSearchKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D47118E91B69B35500479663 /* AMapSearchKit.framework */; };
+
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +36,7 @@
 /* Begin PBXFileReference section */
 		7FE3E2EC21B77C5600222037 /* libstdc++.6.0.9.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.6.0.9.tbd"; path = "usr/lib/libstdc++.6.0.9.tbd"; sourceTree = SDKROOT; };
 		7FE3E2EE21B77C6100222037 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+
 		D4080BEE1B68CD6A007402F0 /* AMapDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AMapDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4080BF21B68CD6A007402F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D4080BF31B68CD6A007402F0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -47,11 +50,7 @@
 		D4080C071B68CD6B007402F0 /* AMapDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AMapDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4080C0C1B68CD6B007402F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D4080C0D1B68CD6B007402F0 /* AMapDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AMapDemoTests.m; sourceTree = "<group>"; };
-		D4080C251B68D269007402F0 /* MAMapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MAMapKit.framework; path = ../MAMapKit.framework; sourceTree = "<group>"; };
-		D4080C2E1B68D782007402F0 /* AMap.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = AMap.bundle; sourceTree = "<group>"; };
-		D47118E91B69B35500479663 /* AMapSearchKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AMapSearchKit.framework; path = ../AMapSearchKit.framework; sourceTree = "<group>"; };
-		D47118EB1B69B37800479663 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
-		D47118ED1B69B38600479663 /* libstdc++.6.0.9.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.6.0.9.dylib"; path = "usr/lib/libstdc++.6.0.9.dylib"; sourceTree = SDKROOT; };
+		DD4267FC4254018CE3F48561 /* Pods-AMapDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AMapDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-AMapDemo/Pods-AMapDemo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +62,7 @@
 				7FE3E2ED21B77C5600222037 /* libstdc++.6.0.9.tbd in Frameworks */,
 				D47118EA1B69B35500479663 /* AMapSearchKit.framework in Frameworks */,
 				D4080C271B68D269007402F0 /* MAMapKit.framework in Frameworks */,
+
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,10 +81,12 @@
 			children = (
 				7FE3E2EE21B77C6100222037 /* libz.tbd */,
 				7FE3E2EC21B77C5600222037 /* libstdc++.6.0.9.tbd */,
+
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+
 		D4080BE51B68CD6A007402F0 = {
 			isa = PBXGroup;
 			children = (
@@ -93,6 +95,7 @@
 				D4080C0A1B68CD6B007402F0 /* AMapDemoTests */,
 				D4080BEF1B68CD6A007402F0 /* Products */,
 				7FE3E2EB21B77C5600222037 /* Frameworks */,
+
 			);
 			sourceTree = "<group>";
 		};
@@ -115,6 +118,8 @@
 				D4080BFB1B68CD6A007402F0 /* Main.storyboard */,
 				D4080BFE1B68CD6A007402F0 /* Images.xcassets */,
 				D4080C001B68CD6A007402F0 /* LaunchScreen.xib */,
+				886F34731D78399300D6200D /* AMapDemo-Prefix.pch */,
+				886F34741D783C3800D6200D /* ExternHeader.h */,
 				D4080BF11B68CD6A007402F0 /* Supporting Files */,
 			);
 			path = AMapDemo;
@@ -125,6 +130,9 @@
 			children = (
 				D4080BF21B68CD6A007402F0 /* Info.plist */,
 				D4080BF31B68CD6A007402F0 /* main.m */,
+				886F34711D78313200D6200D /* libstdc++.6.0.9.tbd */,
+				886F346F1D78312000D6200D /* libstdc++.tbd */,
+				886F346D1D78310F00D6200D /* libz.tbd */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -149,11 +157,6 @@
 		D4080C1B1B68CF3D007402F0 /* FrameWorks */ = {
 			isa = PBXGroup;
 			children = (
-				D4080C2E1B68D782007402F0 /* AMap.bundle */,
-				D47118ED1B69B38600479663 /* libstdc++.6.0.9.dylib */,
-				D47118EB1B69B37800479663 /* libz.dylib */,
-				D47118E91B69B35500479663 /* AMapSearchKit.framework */,
-				D4080C251B68D269007402F0 /* MAMapKit.framework */,
 			);
 			name = FrameWorks;
 			path = AMapDemo;
@@ -166,9 +169,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D4080C111B68CD6B007402F0 /* Build configuration list for PBXNativeTarget "AMapDemo" */;
 			buildPhases = (
+				ADC363C9EFD7A98EDAFFD37B /* [CP] Check Pods Manifest.lock */,
 				D4080BEA1B68CD6A007402F0 /* Sources */,
 				D4080BEB1B68CD6A007402F0 /* Frameworks */,
 				D4080BEC1B68CD6A007402F0 /* Resources */,
+				BC76AF2BBA474D971E7C4EFC /* [CP] Embed Pods Frameworks */,
+				FAC39F899C1E90B8E5F97C86 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -203,11 +209,12 @@
 		D4080BE61B68CD6A007402F0 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0640;
+				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = "上海理想信息有限公司";
 				TargetAttributes = {
 					D4080BED1B68CD6A007402F0 = {
 						CreatedOnToolsVersion = 6.4;
+						DevelopmentTeam = JQXJTT5XJZ;
 					};
 					D4080C061B68CD6B007402F0 = {
 						CreatedOnToolsVersion = 6.4;
@@ -241,7 +248,6 @@
 			files = (
 				D4080BFD1B68CD6A007402F0 /* Main.storyboard in Resources */,
 				D4080C021B68CD6A007402F0 /* LaunchScreen.xib in Resources */,
-				D4080C2F1B68D782007402F0 /* AMap.bundle in Resources */,
 				D4080BFF1B68CD6A007402F0 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -254,6 +260,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		ADC363C9EFD7A98EDAFFD37B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		BC76AF2BBA474D971E7C4EFC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AMapDemo/Pods-AMapDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FAC39F899C1E90B8E5F97C86 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AMapDemo/Pods-AMapDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D4080BEA1B68CD6A007402F0 /* Sources */ = {
@@ -325,6 +379,7 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -386,26 +441,40 @@
 		};
 		D4080C121B68CD6B007402F0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 963E24A3CD17D083E74C961C /* Pods-AMapDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/AMapDemo/AMapDemo-Prefix.pch";
 				INFOPLIST_FILE = AMapDemo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.greenlandGroup.lvdi;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
 		D4080C131B68CD6B007402F0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DD4267FC4254018CE3F48561 /* Pods-AMapDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/AMapDemo/AMapDemo-Prefix.pch";
 				INFOPLIST_FILE = AMapDemo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.greenlandGroup.lvdi;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -423,6 +492,7 @@
 				);
 				INFOPLIST_FILE = AMapDemoTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ideal.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AMapDemo.app/AMapDemo";
 			};
@@ -438,6 +508,7 @@
 				);
 				INFOPLIST_FILE = AMapDemoTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ideal.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AMapDemo.app/AMapDemo";
 			};

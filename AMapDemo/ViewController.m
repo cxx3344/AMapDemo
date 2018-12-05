@@ -16,9 +16,15 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+<<<<<<< HEAD
 //    简单修改
 //    分支测试修改
     // Do any additional setup after loading the view, typically from a nib.
+=======
+
+    
+    
+>>>>>>> 9cad236f655523e6324bd169a781b9adbae13165
 }
 
 - (void)didReceiveMemoryWarning {
